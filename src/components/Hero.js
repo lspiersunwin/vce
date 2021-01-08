@@ -2,14 +2,13 @@ import React from "react"
 import Background from "./Background"
 import styled from "styled-components"
 import { Link } from "gatsby"
-import { FiChevronRight, FiChevronLeft } from "react-icons/fi"
+// import { FiChevronRight, FiChevronLeft } from "react-icons/fi" TEST
 
 const Hero = () => {
   return (
     <Wrapper>
       <Background>
         <article>
-          {/* <h3>The Victoria Cross</h3> */}
           <h1>The Victoria Cross</h1>
           <Link to="/encyclopedia/">Encyclopedia</Link>
         </article>
@@ -51,7 +50,6 @@ const Wrapper = styled.section`
       color: var(--clr-black);
     }
     @media (min-width: 800px) {
-      /* padding: 0 1rem; */
       a {
         font-size: 1.25rem;
         padding: 0.5rem 1.25rem;
