@@ -19,7 +19,7 @@ const Navbar = ({ toggle }) => {
       <>
         <Nav>
           <NavbarContainer>
-            <Link to="/">
+            <Link to="/" className="nav-left">
               <img src={logo} alt="VC"></img>
             </Link>
             <MobileIcon onClick={toggle}>
@@ -53,6 +53,9 @@ const Wrapper = styled.nav`
     color: var(--clr-primary-5);
     border-bottom: 2px var(--clr-primary-5) solid;
     transition: 0.5s;
+  }
+  a.nav-left {
+    margin-top: 10px;
   }
 `
 
