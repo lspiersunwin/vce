@@ -2,10 +2,11 @@ import React from "react"
 import ReactMarkdown from "react-markdown"
 import { graphql, Link } from "gatsby"
 import styled from "styled-components"
-import { Layout, Encyclopedia, Algolia } from "../components"
+import { Layout } from "../components"
 import Image from "gatsby-image"
 import Title from "../components/Title"
-import List from "../components/List"
+// import List from "../components/List"
+// I removed Encyclopedia, Algolia from layout import?
 
 const articleTemplate = ({
   data: {

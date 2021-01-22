@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Layout } from "../components"
 
-const About = () => {
+const Contact = () => {
   return (
     <Wrapper>
       <Layout>
@@ -123,4 +123,4 @@ const Wrapper = styled.main`
   }
 `
 
-export default About
+export default Contact

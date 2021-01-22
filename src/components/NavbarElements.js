@@ -1,9 +1,9 @@
 import styled from "styled-components"
-import { Link } from "gatsby"
 
 export const Nav = styled.nav`
   background: transparent;
   height: 80px;
+  /* To make the navbar disappear */
   /* margin-top: -80px; */
   display: flex;
   justify-content: center;

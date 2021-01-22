@@ -6,7 +6,6 @@ import Image from "gatsby-image"
 import Title from "../components/Title"
 
 const articleTemplate = ({ data }) => {
-  console.log(data.file.childImageSharp.fluid)
   const fluid = data.file.childImageSharp.fluid
   return (
     <Wrapper>
