@@ -11,7 +11,7 @@ const articleTemplate = ({ data }) => {
     <Wrapper>
       <Layout>
         {/* Text align this div */}
-        <div>
+        <div className="title-div">
           <Title title="Derrick Unwin"></Title>
         </div>
 
@@ -183,6 +183,10 @@ const Wrapper = styled.main`
 
   .btn a {
     color: white;
+  }
+
+  .title-div {
+    margin-top: 0.75rem;
   }
 
   .single-article {

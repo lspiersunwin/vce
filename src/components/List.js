@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Title from "./Title"
 import styled from "styled-components"
-import Image from "gatsby-image"
+// import Image from "gatsby-image"
 import SearchButtons from "./SearchButtons"
 
 const List = ({ encyclopedia: data, title }) => {

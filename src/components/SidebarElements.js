@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Link } from "gatsby-link"
+// import { Link } from "gatsby-link"
 import { GoThreeBars } from "react-icons/go"
 
 export const SidebarContainer = styled.aside`

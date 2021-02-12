@@ -2,17 +2,19 @@ import React from "react"
 import { Layout } from "../components"
 import styled from "styled-components"
 import Title from "../components/Title"
+import Image from "gatsby-image"
 
-const Introduction = () => {
+const Introduction = ({ data }) => {
+  const fluid = data.file.childImageSharp.fluid
   return (
     <Wrapper>
       <Layout>
-        <div>
+        <div className="title-div">
           <Title title="Introduction"></Title>
         </div>
         <section className="single-article">
           <article>
-            <p>test</p>
+            <Image fluid={fluid} alt="vc" classname="img"></Image>
           </article>
           <article>
             <p>
@@ -257,6 +259,10 @@ const Wrapper = styled.main`
     color: white;
   }
 
+  .title-div {
+    margin-top: 0.75rem;
+  }
+
   .single-article {
     width: 90vw;
     max-width: 1170px;
@@ -287,5 +293,17 @@ const Wrapper = styled.main`
 
   nav {
     background: var(--clr-primary-55);
+  }
+`
+
+export const query = graphql`
+  {
+    file(relativePath: { eq: "vc.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `

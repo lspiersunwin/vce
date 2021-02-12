@@ -9,7 +9,7 @@ const References = ({ data }) => {
   return (
     <Wrapper>
       <Layout>
-        <div>
+        <div className="title-div">
           <Title title="References"></Title>
         </div>
         <section className="single-article">
@@ -1222,6 +1222,10 @@ const Wrapper = styled.main`
 
   .btn a {
     color: white;
+  }
+
+  .title-div {
+    margin-top: 0.75rem;
   }
 
   .single-article {

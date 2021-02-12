@@ -5,11 +5,11 @@ import {
   Hero,
   About,
   Encyclopedia,
-  Slider,
-  GridEncyclopedia,
-  Sidebar,
+  // Slider,
+  // GridEncyclopedia,
+  // Sidebar,
 } from "../components"
-import SEO from "../components/seo"
+// import SEO from "../components/seo"
 
 const HomePage = ({ data }) => {
   const {

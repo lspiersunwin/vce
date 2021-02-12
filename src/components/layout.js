@@ -1,4 +1,5 @@
-import React, { useState, useContext } from "react"
+import React, { useState } from "react"
+// import React, { useState, useContext } from "react"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 // import { GatsbyContext } from "../context/context" am I needed
